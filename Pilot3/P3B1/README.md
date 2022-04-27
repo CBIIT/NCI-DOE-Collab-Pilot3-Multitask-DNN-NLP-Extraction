@@ -6,7 +6,9 @@ The network itself is composed of layers shared among multiple tasks and individ
 
 <img src="https://github.com/CBIIT/NCI-DOE-Collab-Pilot3-Multitask-DNN-NLP-Extraction/blob/master/Pilot3/P3B1/multilayer-dnn.png" width="400" height="400" alt="Multilayer DNN Architecture">
 
-The user can modify the parameters of the model in [p3b1_default_model.txt](https://github.com/CBIIT/NCI-DOE-Collab-Pilot3-Multitask-DNN-NLP-Extraction/blob/master/Pilot3/P3B1/p3b1_default_model.txt). Some of the parameters the user can adjust include: 
+The user can modify the parameters of the model in [p3b1_default_model.txt](https://github.com/CBIIT/NCI-DOE-Collab-Pilot3-Multitask-DNN-NLP-Extraction/blob/master/Pilot3/P3B1/p3b1_default_model.txt). 
+
+Some of the parameters the user can adjust include: 
  * number of iterations for training the model
  * number of layers and nodes in the shared layers
  * number of layers and nodes in the individual layers
