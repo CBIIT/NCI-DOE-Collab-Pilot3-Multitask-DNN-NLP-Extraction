@@ -84,8 +84,8 @@ This work has been supported in part by the Joint Design of Advanced Computing S
 * Proposed network architecture: Deep neural net across individual tasks
 * Number of layers: 5-6 layers
 
-A graphical representation of the MTL-DNN is shown below:
-![MTL-DNN Architecture](https://raw.githubusercontent.com/ECP-CANDLE/Benchmarks/master/Pilot3/P3B1/images/MTL1.png)
+A graphical representation of the model is shown below:
+![Multilayer DNN Architecture](https://github.com/CBIIT/NCI-DOE-Collab-Pilot3-Multitask-DNN-NLP-Extraction/blob/master/Pilot3/P3B1/multilayer-dnn.png)
 
 ### Running the baseline implementation
 There are two broad options for running our MTL implementation. The first baseline option includes the basic training of an MTL-based deep neural net. The second implementation includes a standard 10-fold cross-validation loop and depends on the first baseline for building and training the MTL-based deep neural net.
