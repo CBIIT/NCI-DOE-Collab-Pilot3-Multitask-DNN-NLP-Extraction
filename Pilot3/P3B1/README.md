@@ -379,3 +379,11 @@ Task 3: Tumor laterality - Micro F1 score 0.918604651163
 Task 3: Histological grade - Macro F1 score 0.537549407115
 Task 3: Histological grade - Micro F1 score 0.720588235294
 ```
+
+Task 1 : Primary site - Macro F1 score 0.15679785330948118
+Task 1 : Primary site - Micro F1 score 0.3838383838383838
+Task 2 : Tumor laterality - Macro F1 score 0.6312178387650085
+Task 2 : Tumor laterality - Micro F1 score 0.6511627906976745
+Task 3 : Histological grade - Macro F1 score 0.2923280423280423
+Task 3 : Histological grade - Micro F1 score 0.4852941176470588
+Average loss:  1.1945778330167134
