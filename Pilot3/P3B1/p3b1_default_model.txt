@@ -1,5 +1,5 @@
 [Global_Params]
-data_url = 'ftp://ftp.mcs.anl.gov/pub/candle/public/benchmarks/P3B1/'
+data_url = 'https://modac.cancer.gov/api/v2/dataObject/NCI_DOE_Archive/JDACS4C/JDACS4C_Pilot_3/multitask_dnn_nlp_extraction/'
 train_data = 'P3B1_data.tar.gz'
 model_name = 'p3b1'
 learning_rate = 0.01
