@@ -2,7 +2,7 @@
 
 This resource trains a multitask DNN using Keras, a deep learning library, on a given sample corpus of biomedical text (i.e. pathology reports). The trained model can then be used to extract multiple pieces of information such as tumor sites, tumor laterality, and tumor grade from pathology reports. 
 
-The network itself is composed of layers shared among multiple tasks and individual layers specific for each task as shown in the graphicial representation of the model architecture shown below:
+The network itself is composed of layers shared among multiple tasks and individual layers specific for each task as shown in the graphical representation of the model architecture shown below:
 
 <img src="https://github.com/CBIIT/NCI-DOE-Collab-Pilot3-Multitask-DNN-NLP-Extraction/blob/master/Pilot3/P3B1/multilayer-dnn.png" width="400" height="400" alt="Multilayer DNN Architecture">
 
