@@ -62,7 +62,7 @@ Task 3 : Histological grade - Micro F1 score 0.4852941176470588
 Average loss:  1.1945778330167134
 ```
 
-Note that the training and testing data files are provided as standard CSV files in a folder called *P3B1_data*. We do not make any representations or guarantees about the data. It is provided solely as a starter set to facilitate end to end training of a model. The accuracy and results of that model are not to be strongly considered.
+Note that the training and testing data files are provided as standard CSV files in *Data/Pilot3/P3B1_data*. We do not make any representations or guarantees about the data. It is provided solely as a starter set to facilitate end to end training of a model. The accuracy and results of that model are not to be strongly considered.
 
 ## Acknowledgments
    
