@@ -16,7 +16,7 @@ Instead of training individual DNNs for single tasks, this resource leverages th
 
 ### Components	
 * Data:
-  * The preprocessed training and test data of clinical pathology reports are in [MoDaC](https://modac.cancer.gov/assetDetails?returnToSearch=true&&dme_data_id=NCI-DME-MS01-18031472).
+  * The preprocessed training and test data of clinical pathology reports are in [MoDaC](https://modac.cancer.gov/searchTab?dme_data_id=NCI-DME-MS01-18269439).
 
 ### Technical Details
 Refer to this [README](./Pilot3/P3B1/README.md).
