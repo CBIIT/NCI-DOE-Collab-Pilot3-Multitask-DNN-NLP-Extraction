@@ -1,0 +1,16 @@
+name: p3b1
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - numpy=1.19.5
+  - python=3.6.10
+  - tensorflow=2.2.0
+  - tqdm=4.62.3
+  - pandas=1.1.5
+  - scikit-learn=0.24.2
+  - matplotlib=3.3.4
+  - numba=0.53.1
+  - astropy=4.1
+  - patsy=0.5.2 
+  - statsmodels=0.12.2
