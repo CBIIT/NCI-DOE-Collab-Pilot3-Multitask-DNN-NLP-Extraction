@@ -42,7 +42,6 @@ This script does the following:
  * Trains the model.
  * Prints the performance metrics of the model for each task like the example below.
 
-### Example
 ```
 Task 1 : Primary site - Macro F1 score 0.15679785330948118
 Task 1 : Primary site - Micro F1 score 0.3838383838383838
