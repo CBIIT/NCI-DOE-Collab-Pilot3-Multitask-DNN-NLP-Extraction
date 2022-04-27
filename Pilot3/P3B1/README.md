@@ -2,13 +2,13 @@
 
 The RNN-LSTM based Clinical Text Generator trains a Long Short-Term Memory, or LSTM, recurrent neural network, using Keras, a deep learning library, on a given sample corpus of biomedical text (i.e. pathology reports). The trained model can then be used to synthesize text documents similar in context to the sample corpus.
 
-The user can modify the parameters of the model in [p3b2_default_model.txt](https://github.com/CBIIT/NCI-DOE-Collab-Pilot3-RNN-LSTM-based-Clinical-Text-Generator/blob/master/Pilot3/P3B2/p3b2_default_model.txt). Some of the parameters the user can adjust include: 
+The user can modify the parameters of the model in [p3b1_default_model.txt](https://github.com/CBIIT/NCI-DOE-Collab-Pilot3-Multitask-DNN-NLP-Extraction/blob/master/Pilot3/P3B1/p3b1_default_model.txt). Some of the parameters the user can adjust include: 
  * number of iterations for training the model
  * number of layers in the LSTM model
  * the variability of text synthesis
  * the length of the synthesized text
 
-Descriptions of the parameters are provided in [p3b2.py](https://github.com/CBIIT/NCI-DOE-Collab-Pilot3-RNN-LSTM-based-Clinical-Text-Generator/blob/master/Pilot3/P3B2/p3b2.py).
+Descriptions of the parameters are provided in [p3b1.py](https://github.com/CBIIT/NCI-DOE-Collab-Pilot3-Multitask-DNN-NLP-Extraction/blob/master/Pilot3/P3B1/p3b1.py).
 
 ## Setup
 
