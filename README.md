@@ -15,8 +15,12 @@ To use this resource, users must be familiar with natural language processing (N
 Instead of training individual DNNs for single tasks, this resource leverages the relatedness of several tasks to build a DNN capable of multiple tasks. 
 
 ### Components	
-* Data:
-  * The preprocessed training and test data of clinical pathology reports are in [MoDaC](https://modac.cancer.gov/searchTab?dme_data_id=NCI-DME-MS01-18269439).
+* Script to train a multitask DNN model: [p3b1_baseline_keras2.py](https://github.com/CBIIT/NCI-DOE-Collab-Pilot3-Multitask-DNN-NLP-Extraction/blob/master/Pilot3/P3B1/p3b1_baseline_keras2.py)
+* Data: The preprocessed training and test data of clinical pathology reports are in [MoDaC](https://modac.cancer.gov/searchTab?dme_data_id=NCI-DME-MS01-18269439).
 
 ### Technical Details
 Refer to this [README](./Pilot3/P3B1/README.md).
+
+### Reference
+
+For more details, refer to this [publication](https://link.springer.com/chapter/10.1007/978-3-319-47898-2_21).
