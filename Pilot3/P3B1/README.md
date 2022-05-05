@@ -38,6 +38,30 @@ To download the preprocessed data needed to train and test the model:
 
 ## Training
 
+(Optional) Modify the parameters of the model in [p3b1_default_model.txt](https://github.com/CBIIT/NCI-DOE-Collab-Pilot3-Multitask-DNN-NLP-Extraction/blob/master/Pilot3/P3B1/p3b1_default_model.txt). 
+
+   |	Parameter	|	Description	|
+   |	-------------	|	-------------	|
+   | shared_nnet_spec | |
+   | ind_nnet_spec ||
+   | initializiation ||
+   | batch_size	|	|
+   | epochs | Number of training iterations (int) |
+   | learning_rate | Learning rate (float) |
+   | dropout | Fraction of units to drop for the linear transformation of the inputs (float)|
+   | loss | Loss function to use|
+   | activation | Activation function to use|
+   | out_activation | |
+   | optimizer | Name of optimizer to use|
+   | metrics | |
+   | scaling | |
+   | feature_names | Name of the tasks|
+   | shuffle | (boolean)| 
+   | n_fold | (int)|
+   | timeout | (int)|
+   | output_dir | Name of the folder for the output files |
+
+
 To train the model from scratch, run [p3b1_baseline_keras2.py](https://github.com/CBIIT/NCI-DOE-Collab-Pilot3-Multitask-DNN-NLP-Extraction/blob/master/Pilot3/P3B1/p3b1_baseline_keras2.py). 
 
 ```
