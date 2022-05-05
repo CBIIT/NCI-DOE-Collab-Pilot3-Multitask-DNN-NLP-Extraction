@@ -42,23 +42,20 @@ To download the preprocessed data needed to train and test the model:
 
    |	Parameter	|	Description	|
    |	-------------	|	-------------	|
-   | shared_nnet_spec | |
-   | ind_nnet_spec ||
-   | initializiation ||
-   | batch_size	|	|
+   | shared_nnet_spec | Network structure of shared layer |
+   | ind_nnet_spec | Network structure of task-specific layer|
+   | batch_size	| Number of samples that will be passed through to the network at one time (int) |
    | epochs | Number of training iterations (int) |
    | learning_rate | Learning rate (float) |
    | dropout | Fraction of units to drop for the linear transformation of the inputs (float)|
-   | loss | Loss function to use|
-   | activation | Activation function to use|
-   | out_activation | |
-   | optimizer | Name of optimizer to use|
-   | metrics | |
-   | scaling | |
-   | feature_names | Name of the tasks|
-   | shuffle | (boolean)| 
+   | loss | Loss function to use |
+   | activation | Activation function to use |
+   | out_activation | Activation function to use for the output layer |
+   | optimizer | Optimizer method to use |
+   | metrics | Metric function to use |
+   | feature_names | Name of the tasks |
    | n_fold | (int)|
-   | timeout | (int)|
+   | timeout | Duration of time for model training in seconds (int)|
    | output_dir | Name of the folder for the output files |
 
 
