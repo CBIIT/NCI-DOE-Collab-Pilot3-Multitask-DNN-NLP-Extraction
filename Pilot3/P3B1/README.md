@@ -54,7 +54,7 @@ To download the preprocessed data needed to train and test the model:
    | optimizer | Optimizer method to use |
    | metrics | Metric function to use |
    | feature_names | Name of the tasks |
-   | n_fold | (int)|
+   | n_fold | Number of folds for cross-validation (int)|
    | timeout | Duration of time for model training in seconds (int)|
    | output_dir | Name of the folder for the output files |
 
