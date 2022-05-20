@@ -36,6 +36,8 @@ To download the preprocessed data needed to train and test the model:
 2. Follow the instructions in the Training section below.
 3. When prompted by the training script, enter your MoDaC credentials.
 
+This resource provides the training and testing datasets without any representations or guarantees, solely as a starter set to facilitate end-to-end training of a model. Do not rely on the accuracy or results of that model.
+
 ## Training
 
 To train the model:
@@ -87,8 +89,6 @@ Task 3 : Histological grade - Macro F1 score 0.2923280423280423
 Task 3 : Histological grade - Micro F1 score 0.4852941176470588
 Average loss:  1.1945778330167134
 ```
-
-This resource provides the training and testing datasets without any representations or guarantees, solely as a starter set to facilitate end-to-end training of a model. Do not rely on the accuracy or results of that model.
 
 ## Acknowledgments
    
