@@ -40,7 +40,7 @@ To download the preprocessed data needed to train and test the model:
 
 To train the model:
 
-(Optional) Modify the parameters of the model in [p3b1_default_model.txt](https://github.com/CBIIT/NCI-DOE-Collab-Pilot3-Multitask-DNN-NLP-Extraction/blob/master/Pilot3/P3B1/p3b1_default_model.txt). 
+1. (Optional) Modify the parameters of the model in [p3b1_default_model.txt](https://github.com/CBIIT/NCI-DOE-Collab-Pilot3-Multitask-DNN-NLP-Extraction/blob/master/Pilot3/P3B1/p3b1_default_model.txt). 
 
    |	Parameter	|	Description	|
    |	-------------	|	-------------	|
@@ -61,11 +61,11 @@ To train the model:
    | output_dir | Name of the folder for the output files |
 
 
-Run [p3b1_baseline_keras2.py](https://github.com/CBIIT/NCI-DOE-Collab-Pilot3-Multitask-DNN-NLP-Extraction/blob/master/Pilot3/P3B1/p3b1_baseline_keras2.py). 
+2. Run [p3b1_baseline_keras2.py](https://github.com/CBIIT/NCI-DOE-Collab-Pilot3-Multitask-DNN-NLP-Extraction/blob/master/Pilot3/P3B1/p3b1_baseline_keras2.py). 
 
-```
-python p3b1_baseline_keras2.py
-```
+   ```
+   python p3b1_baseline_keras2.py
+   ```
 
 This script performs the following tasks:
  * Downloads and uncompresses the preprocessed data file from MoDaC.
