@@ -1,23 +1,23 @@
 ## Model Description
 
-This resource trains a multitask DNN using Keras, a deep learning library, on a given sample corpus of biomedical text (i.e. pathology reports). The trained model can then be used to extract multiple pieces of information such as tumor sites, tumor laterality, and tumor grade from pathology reports. 
+This resource trains a multitask DNN (deep neural network) using Keras, a deep learning library, on a given sample collection of biomedical text (such as pathology reports). You can then use the trained model to extract multiple pieces of information from pathology reports such as tumor sites, tumor laterality, and tumor grade. 
 
-The network itself is composed of layers shared among multiple tasks and individual layers specific for each task as shown in the graphical representation of the model architecture shown below:
+The DNN itself contains layers shared among multiple tasks and individual layers specific for each task as shown in the following representation of the model architecture:
 
 <img src="https://github.com/CBIIT/NCI-DOE-Collab-Pilot3-Multitask-DNN-NLP-Extraction/blob/master/Pilot3/P3B1/multilayer-dnn.png" width="400" height="400" alt="Multilayer DNN Architecture">
 
-The user can modify the parameters of the model in [p3b1_default_model.txt](https://github.com/CBIIT/NCI-DOE-Collab-Pilot3-Multitask-DNN-NLP-Extraction/blob/master/Pilot3/P3B1/p3b1_default_model.txt). 
+You can modify the parameters of the model in [p3b1_default_model.txt](https://github.com/CBIIT/NCI-DOE-Collab-Pilot3-Multitask-DNN-NLP-Extraction/blob/master/Pilot3/P3B1/p3b1_default_model.txt). 
 
-Some of the parameters the user can adjust include: 
- * number of iterations for training the model
- * number of layers and nodes in the shared layers
- * number of layers and nodes in the individual layers
- * learning rate
- * batch size
- * task names (i.e. tumor sites)
- * number of folds for cross-validation
+Some of the parameters you can adjust include: 
+ * Number of iterations for training the model
+ * Number of layers and nodes in the shared layers
+ * Number of layers and nodes in the individual layers
+ * Learning rate
+ * Batch size
+ * Task names (such as tumor sites)
+ * Number of folds for cross-validation
 
-Descriptions of the parameters are included in [p3b1.py](https://github.com/CBIIT/NCI-DOE-Collab-Pilot3-Multitask-DNN-NLP-Extraction/blob/master/Pilot3/P3B1/p3b1.py).
+The [p3b1.py](https://github.com/CBIIT/NCI-DOE-Collab-Pilot3-Multitask-DNN-NLP-Extraction/blob/master/Pilot3/P3B1/p3b1.py) file contains descriptions of the parameters.
 
 ## Setup
 
@@ -38,13 +38,15 @@ To download the preprocessed data needed to train and test the model:
 
 ## Training
 
+To train the model:
+
 (Optional) Modify the parameters of the model in [p3b1_default_model.txt](https://github.com/CBIIT/NCI-DOE-Collab-Pilot3-Multitask-DNN-NLP-Extraction/blob/master/Pilot3/P3B1/p3b1_default_model.txt). 
 
    |	Parameter	|	Description	|
    |	-------------	|	-------------	|
    | shared_nnet_spec | Network structure of shared layer |
    | ind_nnet_spec | Network structure of task-specific layer|
-   | batch_size	| Number of samples that will be passed through to the network at one time (int) |
+   | batch_size	| Number of samples that the script passes through to the network at one time (int) |
    | epochs | Number of training iterations (int) |
    | learning_rate | Learning rate (float) |
    | dropout | Fraction of units to drop for the linear transformation of the inputs (float)|
@@ -59,20 +61,23 @@ To download the preprocessed data needed to train and test the model:
    | output_dir | Name of the folder for the output files |
 
 
-To train the model from scratch, run [p3b1_baseline_keras2.py](https://github.com/CBIIT/NCI-DOE-Collab-Pilot3-Multitask-DNN-NLP-Extraction/blob/master/Pilot3/P3B1/p3b1_baseline_keras2.py). 
+Run [p3b1_baseline_keras2.py](https://github.com/CBIIT/NCI-DOE-Collab-Pilot3-Multitask-DNN-NLP-Extraction/blob/master/Pilot3/P3B1/p3b1_baseline_keras2.py). 
 
 ```
 python p3b1_baseline_keras2.py
 ```
 
-This script does the following:
+This script performs the following tasks:
  * Downloads and uncompresses the preprocessed data file from MoDaC.
  * Prepares the training and testing data.
  * Builds the multitask DNN model.
  * Trains the model and logs each iteration in a JSON file.
  * Prints the performance metrics of the model for each task.
 
-### Example output
+### Example Output
+
+Here is example output from running the script:
+
 ```
 Task 1 : Primary site - Macro F1 score 0.15679785330948118
 Task 1 : Primary site - Micro F1 score 0.3838383838383838
@@ -83,7 +88,7 @@ Task 3 : Histological grade - Micro F1 score 0.4852941176470588
 Average loss:  1.1945778330167134
 ```
 
-Note that the training and testing data files are provided as standard CSV files in *Data/Pilot3/P3B1_data*. We do not make any representations or guarantees about the data. It is provided solely as a starter set to facilitate end to end training of a model. The accuracy and results of that model are not to be strongly considered.
+This resource provides the training and testing datasets without any representations or guarantees, solely as a starter set to facilitate end-to-end training of a model. Do not rely on the accuracy or results of that model.
 
 ## Acknowledgments
    
