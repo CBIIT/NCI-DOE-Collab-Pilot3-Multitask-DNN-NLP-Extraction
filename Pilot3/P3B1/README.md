@@ -46,21 +46,21 @@ To train the model:
 
    |	Parameter	|	Description	|
    |	-------------	|	-------------	|
-   | shared_nnet_spec | Network structure of shared layer |
-   | ind_nnet_spec | Network structure of task-specific layer|
-   | batch_size	| Number of samples that the script passes through to the network at one time (int) |
-   | epochs | Number of training iterations (int) |
-   | learning_rate | Learning rate (float) |
-   | dropout | Fraction of units to drop for the linear transformation of the inputs (float)|
-   | loss | Loss function to use |
    | activation | Activation function to use |
-   | out_activation | Activation function to use for the output layer |
-   | optimizer | Optimizer method to use |
-   | metrics | Metric function to use |
+   | batch_size | Number of samples that the script passes through to the network at one time (int) |
+   | dropout | Fraction of units to drop for the linear transformation of the inputs (float)|
+   | epochs | Number of training iterations (int) |
    | feature_names | Name of the tasks |
+   | ind_nnet_spec | Network structure of task-specific layer|
+   | learning_rate | Learning rate (float) |
+   | loss | Loss function to use |
+   | metrics | Metric function to use |
    | n_fold | Number of folds for cross-validation (int)|
-   | timeout | Duration of time for model training in seconds (int)|
+   | optimizer | Optimizer method to use |
+   | out_activation | Activation function to use for the output layer |
    | output_dir | Name of the folder for the output files |
+   | shared_nnet_spec | Network structure of shared layer |
+   | timeout | Duration of time for model training in seconds (int)|
 
 
 2. Run [p3b1_baseline_keras2.py](https://github.com/CBIIT/NCI-DOE-Collab-Pilot3-Multitask-DNN-NLP-Extraction/blob/master/Pilot3/P3B1/p3b1_baseline_keras2.py). 
